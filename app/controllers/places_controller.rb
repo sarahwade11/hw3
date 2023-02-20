@@ -6,7 +6,7 @@ def index
 
   def show
     @place = Place.find_by({ "id" => params["id"] })
-    @posts = Post.where({ "place_id" => @place["id"] })
+    @posts = Post.where ({"place_id" => @place["id"] })
   end
 
   def new
@@ -20,6 +20,8 @@ def index
     redirect_to "/places"
   end
 
+ 
+    
   
 end
 
