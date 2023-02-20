@@ -5,9 +5,13 @@
 <ul>
   <% for post in @posts %>
     <li>
-    <%= post["title"] %>
+    <h2>  <%= post["title"] %> </h2>
+   <p>
     <%= post["posted_on"] %>
+   </p>
+   <p>
     <%= post["description"] %>
+   </p>
     </li>
   <% end %>
 </ul>
